@@ -45,7 +45,7 @@ const get_joint_values = () => {
 const main_loop = () => {
     get_joint_values().then((joint_values) => {
         broadcast_joint_values(joint_values);
-        console.log(joint_values);
+        //console.log(joint_values);
         main_loop();
     });
 };
